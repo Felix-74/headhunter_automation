@@ -1,12 +1,18 @@
 import requests
 import time
+import os
+from dotenv import load_dotenv
 
+# Загрузите переменные окружения из .env файла
+load_dotenv()
 
 class HHAPI:
-    def __init__(self, access_token):
-        self.access_token = access_token
+    def __init__(self):
+        self.access_token = os.getenv('ACCESS_TOKEN')
+        if not self.access_token:
+            raise ValueError("Access token not found in environment variables")
         self.headers = {
-            'Authorization': f'Bearer {access_token}',
+            'Authorization': f'Bearer {self.access_token}',
             'HH-User-Agent': 'myapp'
         }
         self.resume_id = None
@@ -59,16 +65,14 @@ class HHAPI:
                 print(f'Возникло исключение: {e}')
                 print(f'отправлено {k} откликов')
 
-
 if __name__ == "__main__":
-    access_token = '****'# Добавить сюда свой access_token.
-    hh_api = HHAPI(access_token)
+    hh_api = HHAPI()
 
     # Получение списка резюме
     hh_api.get_resume_list()
 
     # Поисковый запрос
-    search_row = 'NAME:("python" OR "python программист" NOT "senior ")'# Поисковый запрос
+    search_row = 'NAME:("python" OR "python программист" NOT "senior ")'
 
     # Поиск вакансий
     hh_api.search_vacancies(search_row)
