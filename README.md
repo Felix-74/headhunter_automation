@@ -1,1 +1,1 @@
-# headhunter_automation
+# авто отклик на headhunter
