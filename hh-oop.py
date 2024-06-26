@@ -58,7 +58,6 @@ class HHAPI:
             except Exception as e:
                 print(f'Возникло исключение: {e}')
                 print(f'отправлено {k} откликов')
-                break
 
 
 if __name__ == "__main__":
