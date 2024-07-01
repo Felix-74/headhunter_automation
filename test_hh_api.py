@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from hh_oop import HHAPI  # Предположим, что ваш файл называется hh_api.py
+from hh_oop import HHAPI
 
 class TestHHAPI(unittest.TestCase):
 
