@@ -1,5 +1,6 @@
-import requests
 import time
+
+import requests
 
 # Указать свой access_token
 access_token = '****'
