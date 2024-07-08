@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96615bb1-0ba6-4206-9206-980f947bb4f8" name="Changes" comment="example.env file added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_hh_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_hh_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hh_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/hh_oop.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +38,11 @@
   "keyToString": {
     "Python.hh-oop.executor": "Run",
     "Python.hh.executor": "Run",
+    "Python.hh_oop(new).executor": "Run",
+    "Python.hh_oop.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/dew/HH/headhunter_automation",
     "settings.editor.selected.configurable": "preferences.fileTypes"
@@ -76,7 +80,47 @@
       <option name="project" value="LOCAL" />
       <updated>1719422361242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="example.env file added">
+      <option name="closed" value="true" />
+      <created>1719828532797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719828532797</updated>
+    </task>
+    <task id="LOCAL-00004" summary="example.env file added">
+      <option name="closed" value="true" />
+      <created>1719829654206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719829654206</updated>
+    </task>
+    <task id="LOCAL-00005" summary="example.env file added">
+      <option name="closed" value="true" />
+      <created>1719829810206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719829810206</updated>
+    </task>
+    <task id="LOCAL-00006" summary="example.env file added">
+      <option name="closed" value="true" />
+      <created>1719830638885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719830638885</updated>
+    </task>
+    <task id="LOCAL-00007" summary="example.env file added">
+      <option name="closed" value="true" />
+      <created>1719830698971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719830698971</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

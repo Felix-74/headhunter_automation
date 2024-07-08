@@ -47,6 +47,7 @@ class HHAPI:
                                 params=params)
         vacancies = response.json()
         self.vacancies_ids = [x['id'] for x in vacancies['items']]
+        print(len(self.vacancies_ids))
         return self.vacancies_ids
 
     def respond_to_vacancies(self):
@@ -69,7 +70,10 @@ class HHAPI:
                 )
                 k += 1
                 print("отлик +1")
-                time.sleep(3)
+                time.sleep(6)
+                print("отликов", k)
+                print(response.status_code)
+                print(response.text)
             except Exception as e:
                 print(f'Возникло исключение: {e}')
                 print(f'отправлено {k} откликов')
@@ -81,10 +85,27 @@ if __name__ == "__main__":
     # Получение списка резюме
     hh_api.get_resume_list()
 
-    search_row = 'NAME:("python" OR "python программист" NOT "senior ")'
+    search_row = 'NAME:("python" OR "python программист" NOT "senior " NOT "QA")'
 
     # Поиск вакансий
     hh_api.search_vacancies(search_row)
 
     # Отклик на вакансии
     hh_api.respond_to_vacancies()
+
+class ParkingLot:
+    def __init__(self, n):
+        self.n = n
+        self.park_cars = set()
+
+    def park(self, carID):
+        if len(self.parked_cars) < self.n:
+            self.parked_cars.add(carID)
+            return True
+        else:
+            return False
+
+
+    def unpark(self, carID):
+        if carID in self.parked_cars:
+            self.parked_cars.remove(carID)
