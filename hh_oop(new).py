@@ -3,7 +3,6 @@ import time
 import requests
 from dotenv import load_dotenv
 
-# Загрузите переменные окружения из .env файла
 load_dotenv()
 
 class HHAPI:
@@ -100,13 +99,10 @@ class HHAPI:
 if __name__ == "__main__":
     hh_api = HHAPI()
 
-    # Получение списка резюме
     hh_api.get_resume_list()
 
     search_row = 'NAME:("python" OR "python программист" NOT "senior " NOT "QA")'
 
-    # Поиск вакансий
     hh_api.search_vacancies(search_row)
 
-    # Отклик на вакансии
     hh_api.respond_to_vacancies()
